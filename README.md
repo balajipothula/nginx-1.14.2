@@ -4,7 +4,7 @@
 alpine linux image with nginx, lua, sqlite, redis.
 
 # Creating or Building image from Dockerfile.
-# username/repo:tag.
+# username/repo:tag
 docker build -t balajipothula/webapp:3.9 .
 
 # Loading offline docker image into local machine.
