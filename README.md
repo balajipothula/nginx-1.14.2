@@ -1,2 +1,5 @@
 # webapp-3.9
-alpine3.9, nginx, lua, sqlite, redis.
+alpine linux image with nginx, lua, sqlite, redis.
+
+$ docker load -i webapp-3.9.docker
+
