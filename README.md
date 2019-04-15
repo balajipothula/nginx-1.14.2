@@ -3,6 +3,9 @@
 
 alpine linux image with nginx, lua, sqlite, redis.
 
+# Pulling image from Docker Hub.
+docker pull balajipothula/webapp:3.9
+
 # Creating or Building image from Dockerfile.
 # username/repo:tag
 docker build -t balajipothula/webapp:3.9 .
