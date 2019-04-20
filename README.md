@@ -3,6 +3,9 @@
 
 alpine linux image with nginx, lua, sqlite, redis.
 
+##### Installing "docker" on Ubuntu.
+sudo sh install-docker.sh
+
 ##### Pulling image from Docker Hub.
 docker pull balajipothula/webapp:3.9
 
