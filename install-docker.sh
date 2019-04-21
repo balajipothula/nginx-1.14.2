@@ -7,22 +7,22 @@
 # Note: Please run this script with root privilages.
 
 # uninstalling old versions of docker.
-apt-get -y remove docker docker-engine docker.io
+apt -y remove docker docker-engine docker.io
 
 # updating packages index.
-apt-get update
+apt update
 
 # upgrading packages.
-apt-get -y upgrade
+apt -y upgrade
 
 # dist upgrading package.
-apt-get -y dist-upgrade
+apt -y dist-upgrade
 
 # installing packages to allow apt to use repository over https.
-apt-get -y install apt-transport-https \
-                   ca-certificates     \
-                   curl                \
-                   software-properties-common
+apt -y install apt-transport-https \
+               ca-certificates     \
+               curl                \
+               software-properties-common
 
 # adding docker official gpg key.
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
@@ -37,10 +37,10 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
 add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 
 # updating apt package index.
-apt-get update
+apt update
 
 # installing latest version of docker ce.
-apt-get -y install docker-ce docker-ce-cli containerd.io
+apt -y install docker-ce docker-ce-cli containerd.io
 
 # running docker as non-sudoer.
 # note: reboot required.
