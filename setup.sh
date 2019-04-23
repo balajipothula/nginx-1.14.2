@@ -40,7 +40,7 @@ apt -y install docker-ce docker-ce-cli containerd.io
 tar xzf $HOME/nginx-1.14.2/webapp.tar.gz -C $HOME/nginx-1.14.2/ && rm $HOME/nginx-1.14.2/webapp.tar.gz
 
 # pulling nginx-1.14.2 image from docker hub.
-docker pull balajipothula/nginx-1.14.2
+docker pull balajipothula/nginx:1.14.2
 
 # running docker container with name(--name) "nginx" as daemon(-d),
 # stdin(-i) with volume(-v) "webapp" on port(-p) "80".
