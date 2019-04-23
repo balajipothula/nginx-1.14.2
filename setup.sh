@@ -13,10 +13,7 @@ apt -y remove docker docker-engine docker.io
 apt update
 
 # upgrading packages.
-apt -y upgrade
-
-# dist upgrading package.
-apt -y dist-upgrade
+DEBIAN_FRONTEND=noninteractive apt -y upgrade
 
 # installing packages to allow apt to use repository over https.
 apt -y install apt-transport-https \
