@@ -1,17 +1,9 @@
-## webapp-3.9
+# nginx-1.14.2
+## alpine linux image with nginx, lua, redis, sqlite.
 ### Author: BALAJI POTHULA <*balaji.pothula@techie.com*>
 
-alpine linux image with nginx, lua, sqlite, redis.
+#### cloning tomcat-8.5.40 from github.
+git clone https://github.com/balajipothula/nginx-1.14.2.git
 
-##### Installing "docker" on Ubuntu.
-sudo sh install-docker.sh
-
-##### Pulling image from Docker Hub.
-docker pull balajipothula/webapp:3.9
-
-##### Creating or Building image from Dockerfile.
-##### username/repo:tag
-docker build -t balajipothula/webapp:3.9 .
-
-##### Loading offline docker image into local machine.
-docker load -i webapp-3.9.docker
+##### nginx webapp setup.
+sudo sh $HOME/nginx-1.14.2/setup.sh
