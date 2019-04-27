@@ -1,17 +1,15 @@
-# tomcat-8.5.40
-## alpine linux image with openjdk8-jre, tomcat-native, sqlite, redis.
+# nginx-1.14.2
+## alpine linux image with nginx, lua, sqlite, redis.
 ### Author: BALAJI POTHULA <*balaji.pothula@techie.com*>
 
-#### Cloning tomcat8 from GitHub.
+#### Cloning nginx-1.14.2 from GitHub.
 git clone https://github.com/balajipothula/nginx-1.14.2.git
-
-##### Extracting "webapp" tar ball.
-tar xzf $HOME/nginx-1.14.2/webapp.tar.gz -C $HOME/nginx-1.14.2/ 
 
 ##### Installing "docker" on Ubuntu OS and
 ##### setting "tomcat" server with "web application".
 sudo sh $HOME/nginx-1.14.2/setup.sh
 
+##### Adding current user to "docker" group.
 ##### Running docker as non-sudoer.
 ##### Note: Reboot required.
 ##### After Reboot sudo not required by "docker".
