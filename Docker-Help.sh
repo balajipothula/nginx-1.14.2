@@ -16,14 +16,14 @@ sudo sh $HOME/nginx-1.14.2/setup.sh
 sudo usermod -a -G docker $USER
 
 ##### Pulling image from Docker Hub.
-sudo docker pull balajipothula/nginx-1.14.2
+sudo docker pull balajipothula/nginx:1.14.2
 
 ##### Creating or Building image from Dockerfile.
 ##### username/repo:tag.
-sudo docker build -t balajipothula/nginx-1.14.2 .
+sudo docker build -t balajipothula/nginx:1.14.2 .
 
 ##### Saving docker image offline into local machine.
-sudo docker save -o nginx-1.14.2.docker balajipothula/nginx-1.14.2
+sudo docker save -o nginx-1.14.2.docker balajipothula/nginx:1.14.2
 
 ##### Loading offline docker image into machine.
 sudo docker load -i nginx-1.14.2.docker
@@ -39,7 +39,7 @@ sudo docker ps -a
 
 ##### Running docker image with volume(-v) stdin(-i) daemon(-d) with port(-p) 80 for NGINX.
 ##### (It will create a volume inside the container)
-sudo docker run --name nginx -d -i -p 80:80 --privileged -v $HOME/nginx-1.14.2/webapp:/webapp balajipothula/nginx-1.14.2 sh
+sudo docker run --name nginx -d -i -p 80:80 --privileged -v $HOME/nginx-1.14.2/webapp:/webapp balajipothula/nginx:1.14.2 sh
 
 ##### Executing docker container by name with stdin(-i), startup  NGINX server.
 sudo docker exec -i webapp nginx -c /webapp/nginx/conf/nginx.conf
@@ -61,4 +61,4 @@ sudo docker stop nginx
 sudo docker rm nginx
 
 ##### Removing docker image with username/repo:tag.
-sudo docker rmi balajipothula/nginx-1.14.2
+sudo docker rmi balajipothula/nginx:1.14.2
