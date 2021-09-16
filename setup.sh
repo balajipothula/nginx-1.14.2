@@ -41,7 +41,7 @@ docker pull balajipothula/nginx:1.14.2
 
 # running docker container with name(--name) "nginx" as daemon(-d),
 # stdin(-i) with volume(-v) "webapp" on port(-p) "80".
-docker run --name nginx -d -i -p 80:80 --privileged -v $HOME/nginx-1.14.2/webapp:/webapp balajipothula/nginx:1.14.2 sh
+docker run --name nginxserver -d -i -p 80:80 --privileged -v $HOME/nginx-1.14.2/webapp:/webapp balajipothula/nginx:1.14.2 sh
 
 # executing docker container by name with stdin(-i), starting tomcat server.
-docker exec -i nginx nginx -c /webapp/nginx/conf/nginx.conf
+docker exec -i nginxserver nginx -c /webapp/nginx/conf/nginx.conf
