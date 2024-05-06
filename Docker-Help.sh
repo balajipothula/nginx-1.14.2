@@ -65,4 +65,4 @@ sudo docker rmi balajipothula/nginx:1.14.2
 
 docker image build --tag=netconomy.net/nginx:1.24.0 --file=Dockerfile.NGINX .
 
-docker container run --name=nginx --detach=true --restart=unless-stopped --volume=$HOME/nginx/conf:/nginx/conf --publish=127.0.0.1:80:80/tcp netconomy.net/nginx:1.24.0
+docker container run --name=nginx --detach=true --restart=unless-stopped --volume=$HOME/nginx/conf:/nginx/conf --publish=127.0.0.1:80:80/tcp balajipothula/nginx:1.24.0
