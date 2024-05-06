@@ -1,9 +1,9 @@
-# nginx-1.14.2
+# nginx-1.24.0
 ## alpine linux image with nginx, lua, redis, sqlite.
 ### Author: BALAJI POTHULA <*balaji.pothula@techie.com*>
 
-#### cloning nginx-1.14.2 from github.
+#### cloning nginx-1.24.0 from github.
 git clone https://github.com/balajipothula/nginx-1.14.2.git
 
 ##### nginx webapp setup.
-sudo sh $HOME/nginx-1.14.2/setup.sh
+sudo sh $HOME/nginx-1.24.0/setup.sh
